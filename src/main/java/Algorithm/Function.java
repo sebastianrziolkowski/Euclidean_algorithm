@@ -44,4 +44,44 @@ public class Function {
 
         return a;
     }
+
+
+    public long[] expandedEuclidean(long a, long b)
+    {
+        long x = 0, y = 1, q, r;
+        long nwd_a = 1, nwd_b = 0;
+        long temp;
+
+        while (b != 0)
+        {
+            q = a / b;
+            r = a % b;
+
+            a = b;
+            b = r;
+
+            temp = x;
+            x = nwd_a - q * x;
+            nwd_a = temp;
+
+            temp = y;
+            y = nwd_b - q * y;
+            nwd_b = temp;
+        }
+
+        long tab[] = new long[3];
+
+        //NWD
+            tab[0]=a;
+        //x
+            tab[1]=nwd_a;
+        //y
+            tab[2]=nwd_b;
+
+
+            return tab;
+
+    }
+
+
 }

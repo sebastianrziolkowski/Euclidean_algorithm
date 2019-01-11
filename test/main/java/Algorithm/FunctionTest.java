@@ -33,4 +33,15 @@ public class FunctionTest {
         assertEquals(10,f1.NWDd(10,100));
         assertEquals(1,f1.NWDd(1,2));
     }
+
+    @Test
+    public void expandedEuclidean() {
+        Function f1 = new Function();
+        assertArrayEquals(new long[]{33,0,1},f1.expandedEuclidean(66,33));
+        assertArrayEquals(new long[]{20,1,0},f1.expandedEuclidean(20,120));
+        assertArrayEquals(new long[]{1,1,-1},f1.expandedEuclidean(101,100));
+        assertArrayEquals(new long[]{111,-1,1},f1.expandedEuclidean(666,777));
+        assertArrayEquals(new long[]{1,-20,173},f1.expandedEuclidean(666,77));
+
+    }
 }
