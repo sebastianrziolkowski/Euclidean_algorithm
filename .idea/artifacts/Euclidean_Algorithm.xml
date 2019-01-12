@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Euclidean_Algorithm">
+    <output-path>$PROJECT_DIR$/out/artifacts/Euclidean_Algorithm</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="main.java.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Euclidean_Algorithm.jar">
+        <element id="module-output" name="Euclidean_Algorithm" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="library" level="application" name="javafx-swt" />
+      </element>
+    </root>
+  </artifact>
+</component>
